@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent {
   btnColor:string = "btn "+"purple";
+  
+  firstName:string = 'Gaurav';
+    lastName:string = 'pant';
+    address:string | undefined;
 
   salary:number = 100;
   convertValue(){
