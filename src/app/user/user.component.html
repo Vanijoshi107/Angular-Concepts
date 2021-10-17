@@ -1,0 +1,17 @@
+<h4>Event binding</h4>
+
+<p>My salary per day is {{salary}} $</p>
+<button class="btn" (click)="convertValue()">Change value</button>
+<!--  Event binding lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches. We us () for event binding.
+To bind to an event you use the Angular event binding syntax. This syntax consists of a target event name within parentheses to the left of an equal sign, and a quoted template statement to the right. In the following example, the target event name is "click" and the template statement is "convertValue()"-->
+
+<h5>Using property binding and event binding together</h5>
+
+<!-- two way binding -->
+<input type="text" [value] = "inputValue" (input)="getInput($event)" /> 
+<!-- for making input value dynamic. -->
+
+<!-- //single line code-- -->
+<input type="text" [(ngModel)]= "inputValue">
+
+<h4>{{inputValue}}</h4>
