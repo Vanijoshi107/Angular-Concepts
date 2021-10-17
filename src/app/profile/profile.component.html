@@ -1,0 +1,23 @@
+<h4>Interpolation</h4>
+<p>Hello i am {{name}} and i am {{age}} years old. My salary is {{salary}} </p>
+<!-- {{}} is interpolation -- {{}}-they instruct Angular to interpolate the contents within them.
+Interpolation refers to embedding expressions into marked up text.. -->
+
+<h5> Interpolation-Methods</h5>
+<p>{{getname()}} i am {{name.toUpperCase()}} and i am {{age}} years old  </p>
+ 
+<!-- property binding --> 
+<h4>Property binding</h4>
+<p>A button having property binding</p>
+<button [class]="btnColor"> Click me</button> 
+<!-- Property binding in Angular helps you set values for properties of HTML elements or directives. Use property binding to do things such as toggle button functionality, set paths programmatically, and share values between components.we use [] for property binding -->
+
+<!-- Interpolation is not the recommended approach for using property binding.. as interpolation uses Strings so if any boolean value comes it will give error -->
+
+
+<p>A button having property binding + any random color button</p>
+<button [class]="buttonClr"> Click me</button> 
+
+<p>Changing disabled button to enabled</p>
+
+<button [class]="buttonClr" [disabled]="isDisabled"> Click me</button> 
