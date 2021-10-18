@@ -1,0 +1,9 @@
+<h4>Pipes</h4>
+<!-- go to documentation then reference then in Api there are pipes open that and use them -->
+<!-- 1.title case pipe  2.currency pipe -->
+<p>Hello my name is {{name | titlecase}} My salary is {{salary |currency :'INR'}} </p>
+<p>Hello my name is {{name | json}} My salary is {{salary |currency :'INR'}} </p>tle
+<!-- 3.date pipe  -->
+<input type="date" [(ngModel)]="myDate">
+<p>Today's date is {{myDate |date:'fullDate'}} </p>
+<p>Today's date is {{myDate |date:'dd-MMMM-yyy'}} </p>

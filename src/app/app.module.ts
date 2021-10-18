@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DirectivesComponent } from './directives/directives.component';
     ProfileComponent,
     UserComponent,
     DirectivesComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,
