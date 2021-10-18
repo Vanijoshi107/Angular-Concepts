@@ -1,2 +1,55 @@
 <h4>Built in directives</h4>
 <!-- 1.28.34 -->
+
+<!-- ng if is a structural directive which we use frequently -->
+
+<p *ngIf= "salary>50; else lowsal"> Bete mauj kar di.. </p> <!-- if block -->
+<!-- else block  -->
+<ng-template #lowsal>
+    <p>Salary is too low</p>
+</ng-template>
+<!-- We use ng-template as else block + we have to give it an id where we can write else condition.. and in ngIf block we have to write its(else) id -->
+
+
+<!-- repetative code -->
+<h4>Name of fruits</h4>
+<ol>
+    <li><p>{{fruits[1]}} </p></li>
+    <li><p>{{fruits[0]}} </p></li>
+    <li><p>{{fruits[2]}} </p></li>
+    <li><p>{{fruits[3]}} </p></li>
+</ol>
+
+<!-- using for loop  eg1-->
+<h4>Using for loop</h4>
+<ul>
+    <li *ngFor="let f of fruits; index as i"> {{i+1}} {{f}} </li><!-- variable f iterating in fruits -->
+</ul>  
+
+<!-- using if and for together -->
+<h4>if and for together</h4>
+<ul>
+    <li *ngFor="let f of fruits; even as e">
+        <p *ngIf="e">
+            {{f}} <!-- only fruits with even indexes will be shown -->
+        </p>
+    </li>
+</ul>
+<h4>eg.3--> if e is true then bg=red else bg=pink</h4>
+<ul>
+    <li *ngFor="let f of fruits; even as e" [class]="e? 'red': 'pink'">
+        <p>
+            {{f}} 
+        </p>
+    </li>
+</ul>
+
+<!-- ngclass -->
+<h4>Use of ng class-- please refer to documentation</h4>
+<ul>
+    <li *ngFor="let f of fruits; even as e" [ngClass]="{'yellow':e , 'green':!e}">
+        <p>
+            {{f}} 
+        </p>
+    </li>
+</ul>

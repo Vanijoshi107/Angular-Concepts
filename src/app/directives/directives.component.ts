@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './directives.component.html',
   styleUrls: ['./directives.component.css']
 })
-export class DirectivesComponent implements OnInit {
+export class DirectivesComponent{
+  salary:number= 10;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  fruits:string[]=['mango', 'banana', 'grapes', 'apple']
 
 }
