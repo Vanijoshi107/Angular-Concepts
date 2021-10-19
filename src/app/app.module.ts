@@ -8,6 +8,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { CTOpComponent } from './c-top/c-top.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { PipesComponent } from './pipes/pipes.component';
     UserComponent,
     DirectivesComponent,
     PipesComponent,
+    CommunicationComponent,
+    CTOpComponent,
   ],
   imports: [
     BrowserModule,

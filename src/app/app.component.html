@@ -1,4 +1,49 @@
 <!-- <app-profile></app-profile> -->
 <!-- <app-user></app-user> -->
 <!-- <app-directives></app-directives> -->
-<app-pipes></app-pipes>
+<!-- <app-pipes></app-pipes> -->
+
+<h3> for  passing data from parent to child</h3>
+
+<!-- <app-communication name="abc" age= 21 gender="male" salary=35000></app-communication>
+<app-communication name="pqr" age= 22 gender="female" salary=30000></app-communication> -->
+
+<!-- 2nd example -->
+<div style="display: flex; flex-wrap: wrap;justify-content: space-around;">
+
+<app-communication 
+[name]="users[0].name" 
+[age]= "users[0].age" 
+[gender]="users[0].gender" 
+[salary]="users[0].salary"
+[img]="users[0].imgPath"></app-communication> 
+<app-communication 
+
+[name]="users[1].name" 
+[age]= "users[1].age" 
+[gender]="users[1].gender" 
+[salary]="users[1].salary"
+[img]="users[1].imgPath"></app-communication> 
+<app-communication 
+
+[name]="users[2].name" 
+[age]= "users[2].age" 
+[gender]="users[2].gender" 
+[salary]="users[2].salary"
+[img]="users[2].imgPath"></app-communication>     
+</div>
+
+
+<!-- short hand ==> having some problem here -->
+<!-- <div style="display: flex; flex-wrap: wrap;justify-content: space-around;">
+    <app-communication *ngFor="let user of users" 
+    [ name]="user.name" 
+    [age]="user.age" 
+    [gender]="user.gender"
+    [salary]="user.salary" 
+    [img]="user.imgPath">
+    </app-communication>
+</div> -->
+
+<h3>Passing data from child to parent</h3>
+<app-c-top (myevent)="recData($event)"></app-c-top>

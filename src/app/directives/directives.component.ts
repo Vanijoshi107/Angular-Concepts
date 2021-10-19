@@ -10,4 +10,5 @@ export class DirectivesComponent{
 
   fruits:string[]=['mango', 'banana', 'grapes', 'apple']
 
+  isSpecial:boolean=false;
 }
