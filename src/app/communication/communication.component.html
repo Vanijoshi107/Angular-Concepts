@@ -1,0 +1,18 @@
+                <!-- start from 2 hrs -->
+<p>EG.1</p>
+<!-- <h4> Name is: {{name}}  age:{{age}}  gender: {{gender}}  salary:{{salary}} </h4> -->
+
+<P>EG.2</P><!-- for adding pictures save all pictures into assets folder -->
+
+<div class="card" style="width: 300px;">
+    <div class="card-image">
+      <img [src]="img">
+      <span class="card-title" style="color: black;">{{name |uppercase}}</span>
+    </div>
+    <div class="card-content">
+        <h5 style="font-weight: bold;"> Name: {{name|titlecase}} </h5>
+        <h5 style="font-weight: bold;"> Age: {{age}} </h5>
+        <h5 style="font-weight: bold;"> Gender: {{gender|titlecase}} </h5>
+        <h5 style="font-weight: bold;"> Salary: {{salary|currency:'INR'}} </h5>
+    </div>
+  </div>
