@@ -15,6 +15,6 @@ export class AppComponent {
 
   //making a function
   recData(e:any){
-    console.log(e);
+    alert(e);
   }
 }
